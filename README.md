@@ -28,16 +28,18 @@ b) Host Setup
 * Install [Docker Desktop for Windows](https://docs.docker.com/desktop/setup/install/windows-install/)
 * Create .env file with MINIO_ROOT_USER, MINIO_ROOT_PASSWORD, DEVICE_ID, INTERFACE, IP variables
 * Docker Commands: ```docker compose up -d``` and ```docker compose stop```
+* Create bucket called 'radar-data' using MinIO GUI (MinIO URL: ```http://localhost:9001```)
 * ```pip install scapy minio python-dotenv```
 * ```mkdir C:\RadarTemp```
-* l
-* l
-* l
-* MINIO URL: ```http://localhost:9001```
-
-docker setup for minio
-open ssh --- install using settings + powershell commands
-windows defender firewall -- ports 22 and 2777
+* Use Windows Defender Firewall to create Inbound Rules for Ports 22 (SSH) and 2777 (RSTD)
+* Install OpenSSH Server via Windows PowerShell (Run as Admin):
+  ```
+  a) Add-WindowsCapability -Online -Name OpenSSH.Server~~~~0.0.1.0
+  b) Get-WindowsCapability -Online | Where-Object Name -like 'OpenSSH.Server*' (to verify installation)
+  c) Start-Service sshd
+  d) Set-Service -Name sshd -StartupType Automatic (to enable on boot)
+  e) Get-NetFirewallRule -Name *SSH* (to verify whether windows firewall allows it)
+  ```
 
 ## Usage
 
