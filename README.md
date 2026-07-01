@@ -28,7 +28,7 @@ b) Host Setup
 * Install [Docker Desktop for Windows](https://docs.docker.com/desktop/setup/install/windows-install/)
 * Create .env file with MINIO_ROOT_USER, MINIO_ROOT_PASSWORD, DEVICE_ID, INTERFACE, IP variables
 * Docker Commands: ```docker compose up -d``` and ```docker compose stop```
-* ``pip install scapy minio python-dotenv```
+* ```pip install scapy minio python-dotenv```
 * ```mkdir C:\RadarTemp```
 * l
 * l
