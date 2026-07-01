@@ -19,6 +19,7 @@ a) Client Setup
 * ```pip install paramiko```
 * ```dotnet new console -n RadarRemote``` & add files in RadarRemote folder
 * Adjust IP Address in Program.cs & Adjust Path to read_adc.py in radar_control.py
+* ```pip install python-dotenv```
 * Create .env file with HOSTNAME, USERNAME, PASSWORD variables
 
 b) Host Setup
