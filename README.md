@@ -14,8 +14,6 @@ Captured data is forwarded via UDP packets through a packet sniffer and stored i
 ## Installation
 
 ## Usage
-
-Run 'python radar_control.py'
-
+Run ```python radar_control.py```
 
 ## Resources
