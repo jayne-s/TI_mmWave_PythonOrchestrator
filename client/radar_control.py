@@ -1,5 +1,8 @@
 import subprocess
 import paramiko
+from dotenv import load_dotenv
+
+load_dotenv()
 
 ssh = paramiko.SSHClient()
 ssh.set_missing_host_key_policy(paramiko.AutoAddPolicy())
