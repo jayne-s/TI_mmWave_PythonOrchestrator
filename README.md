@@ -6,4 +6,4 @@
 
 ## Usage
 
-python radar_control.py
+Run 'python radar_control.py'
