@@ -11,6 +11,8 @@ Build a working RSTD setup where:
 
 Captured data is forwarded via UDP packets through a packet sniffer and stored in MinIO for downstream processing.
 
+This architecture is designed to extend naturally to multiple simultaneous radars, although that is current out of scope and has not been tested yet. 
+
 ## Installation
 
 ## Usage
