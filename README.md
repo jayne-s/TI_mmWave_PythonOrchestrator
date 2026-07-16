@@ -37,7 +37,8 @@ b) Host Setup
   b) Get-WindowsCapability -Online | Where-Object Name -like 'OpenSSH.Server*' (to verify installation)
   c) Start-Service sshd
   d) Set-Service -Name sshd -StartupType Automatic (to enable on boot)
-  e) Get-NetFirewallRule -Name *SSH* (to verify whether windows firewall allows it)
+  e) Get-NetFirewallRule -Name *SSH* (to verify whether windows
+  firewall allows it)
   ```
 
 ## Usage
